@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul>
+      <li><a href="lezione29 ottobre tabella.html" title="tabelle"></a></li>
+      <li><a href="form.html" title="form"></a></li>
+    </ul>
+
+    <h1>FORMS</h1>
+
+    <h2>nomi di gente</h2>
+
+    <form method="get" action="grazie.html">
+      <label for="nome">nome</label>&nbsp;
+      <input type="text" id="nome" name="name" />
+      <label for="cognome">cognome</label>&nbsp;
+      <input type="text" id="cognome" name="surname" />
+      <label for="email">email</label>&nbsp;
+      <input type="email" id="email" name="email" />
+      <p>&nbsp;</p>
+      <button type="submit" id="invia">invia</button>
+      <button type="reset" id="cancella">cancella</button>
+    </form>
+
+    <hr />
+
+    <h2>form lazio</h2>
+
+    <form method="get" action="grazie.html">
+        <!--gruppo anagrafica-->
+      <fieldset>
+        <legend>anagrafica</legend>
+        <label for="nome"></label>
+        &nbsp;
+        <input type="text" id="nome" name="nome" />
+        <label for="cognome">cognome</label>&nbsp;
+        <input type="text" id="cognome" name="cognome" required />
+        <label for="datanascita">data di nascita</label>&nbsp;
+        <input type="date" id="datanascita" name="datanascita" />
+        <br /><br />
+        <label for="indirizzo">indirizzo</label>
+        <textarea
+          name="indirizzo"
+          id="indirizzo"
+          rows="2"
+          cols="50"
+          placeholder="via don luigi sturzo "
+        ></textarea>
+        <label for="telefono">telefono</label>&nbsp;
+        <input type="tel" id="telefono" name="telefono" placeholder="355994433">
+        <label for="email">email</label>&nbsp;
+        <input type="email" id="email" name="email" minlength="9" required>
+
+      </fieldset>
+      <!--gruppo preferenze-->
+      
+    </form>
+  </body>
+</html>
